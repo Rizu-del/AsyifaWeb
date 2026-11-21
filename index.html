@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMK Negeri 9 Medan &ndash; Portal Informasi Sekolah</title>
+  <meta name="description" content="Portal informasi SMK Negeri 9 Medan: jurusan RPL, TKJ, DKV, PSPT, Animasi, Social Care, guru, karya siswa, PKL, dan kontak.">
+  <link rel="icon" href="LogoSmk.jpg">
+  <link rel="stylesheet" href="style.css?v=5">
+  <script src="script.js?v=5" defer></script>
+</head>
+<body>
+
+<div id="start-lights" title="Klik untuk melewati">
+  <b>Siap... Start!</b>
+  <div class="lampu-baris"><span class="lampu"></span><span class="lampu"></span><span class="lampu"></span><span class="lampu"></span><span class="lampu"></span></div>
+  <small>Ketuk layar untuk melewati</small>
+</div>
+
+<header class="header">
+  <div class="wrap hbar">
+    <a class="logo" href="#beranda" data-ke="beranda">
+      <span class="lg"><img src="LogoSmk.jpg" alt="Logo SMKN 9 Medan"></span>
+      <span class="lt"><b>SMK Negeri 9 Medan</b><small>Portal Informasi Sekolah</small></span>
+    </a>
+    <nav class="nav-links" id="menu">
+      <a href="#beranda">Beranda</a>
+      <a href="#jurusan">Jurusan</a>
+      <a href="#guru">Guru</a>
+      <a href="#karya">Karya Siswa</a>
+      <a href="#kontak">Kontak</a>
+      <div class="dd">
+        <button type="button" class="dd-btn">Lainnya &#9662;</button>
+        <div class="dd-menu">
+          <a href="#kurikulum">&#128218; Kurikulum RPL</a>
+          <a href="#jadwal">&#128197; Jadwal Praktikum</a>
+          <a href="#modul">&#128187; Modul Pemrograman Web</a>
+          <a href="#lab">&#128421; Daftar Lab RPL</a>
+          <a href="#pkl">&#127942; Info PKL &amp; LSP</a>
+        </div>
+      </div>
+    </nav>
+    <button class="ikon-btn" id="tema" aria-label="Ganti tema gelap/terang">&#127769;</button>
+    <button class="ikon-btn hamburger-btn" id="btn-menu" aria-label="Menu">&#9776;</button>
+  </div>
+  <div class="speedbar"><i id="speedbar"></i></div>
+</header>
+<div class="ticker"><span>&#127937; 6 KOMPETENSI KEAHLIAN &nbsp;&bull;&nbsp; &#128736; PRAKTIK LANGSUNG &nbsp;&bull;&nbsp; &#127942; PKL &amp; UJI KOMPETENSI LSP &nbsp;&bull;&nbsp; &#128172; TANYA ASISTEN KAPAN SAJA &nbsp;&bull;&nbsp; &#127937; SMK NEGERI 9 MEDAN</span></div>
+
+<main class="wrap konten-utama">
+
+    <section class="halaman aktif" id="beranda">
+      <div class="hero">
+        <div class="hero-teks">
+          <span class="pil">&#127891; Sekolah Menengah Kejuruan Negeri</span>
+          <h1>SMK Negeri 9 Medan</h1>
+          <p>Enam kompetensi keahlian, guru pembimbing berpengalaman, dan praktik langsung di dunia industri. Temukan jurusan yang cocok untukmu.</p>
+          <div class="hero-aksi">
+            <a href="#jurusan" class="tombol" data-ke="jurusan">Lihat Jurusan</a>
+            <a href="#guru" class="tombol ghost" data-ke="guru">Kenalan dengan Guru</a>
+          </div>
+        </div>
+        <div class="hero-logo"><img src="LogoSmk.jpg" alt="Logo SMK Negeri 9 Medan"></div>
+        <div class="statistik">
+          <div class="stat"><b data-n="6">6</b><span>Jurusan</span></div>
+          <div class="stat"><b data-n="6">6</b><span>Guru Jurusan</span></div>
+          <div class="stat"><b data-n="3">3</b><span>Proyek Unggulan RPL</span></div>
+          <div class="stat"><b data-n="2">2</b><span>Lab Praktik RPL</span></div>
+        </div>
+      </div>
+
+      <h2 class="judul-bagian">Jurusan Kami</h2>
+      <div class="jurusan-grid" id="grid-beranda"></div>
+
+      <h2 class="judul-bagian">Menu Cepat</h2>
+      <div class="quick-grid">
+        <a href="#jadwal" class="quick" data-ke="jadwal"><span>&#128197;</span><b>Jadwal Praktikum</b><small>Pemakaian lab</small></a>
+        <a href="#modul" class="quick" data-ke="modul"><span>&#128187;</span><b>Modul Web</b><small>HTML, CSS, JS</small></a>
+        <a href="#lab" class="quick" data-ke="lab"><span>&#128421;</span><b>Daftar Lab RPL</b><small>2 ruang praktik</small></a>
+        <a href="#pkl" class="quick" data-ke="pkl"><span>&#127942;</span><b>Info PKL &amp; LSP</b><small>Magang &amp; sertifikasi</small></a>
+      </div>
+
+      <div class="sorotan">
+        <img src="Rpl.jpg" alt="Logo Jurusan RPL">
+        <div>
+          <span class="pil kecil">Sorotan Jurusan</span>
+          <h3>Rekayasa Perangkat Lunak (RPL)</h3>
+          <p>Jurusan RPL membekali siswa dengan kemampuan membuat aplikasi web, mengelola basis data, dan memprogram berbagai perangkat lunak. Lewat portal ini kamu bisa melihat kurikulum, karya siswa, jadwal praktikum, dan informasi PKL.</p>
+        </div>
+      </div>
+      <h3 class="judul-bagian">Apa yang dipelajari di RPL?</h3>
+      <div class="fitur">
+        <div class="fitur-item" data-tanya="Jelaskan pemrograman web"><span>&#127760;</span><h4>Web</h4><p>Membuat website responsif yang tampil baik di semua perangkat.</p></div>
+        <div class="fitur-item" data-tanya="Jelaskan basis data"><span>&#128451;</span><h4>Basis Data</h4><p>Merancang dan mengelola data dengan SQL.</p></div>
+        <div class="fitur-item" data-tanya="Jelaskan pemrograman berorientasi objek"><span>&#129489;&#8205;&#128187;</span><h4>Pemrograman</h4><p>Menyusun program dengan konsep class dan objek.</p></div>
+      </div>
+
+      <h2 class="judul-bagian">Info &amp; Promo Lab</h2>
+      <div class="promo-grid">
+        <div class="promo-box"><strong>Uji Kompetensi LSP!</strong><p>Persiapkan portofolio web responsif kalian sebelum jadwal asesmen.</p></div>
+        <div class="promo-box"><strong>Pendaftaran PKL</strong><p>Konsultasikan tempat PKL dengan guru pembimbing jurusan.</p></div>
+      </div>
+    </section>
+
+    <section class="halaman" id="jurusan">
+      <div class="banner">&#127979;</div>
+      <small class="label-kecil">KOMPETENSI KEAHLIAN</small>
+      <h2>Jurusan di SMKN 9 Medan</h2>
+      <p class="penjelasan">Enam kompetensi keahlian di SMK Negeri 9 Medan. Pilih kartu untuk melihat detail, atau tanya asisten.</p>
+      <div class="jurusan-grid" id="grid-jurusan"></div>
+      <div class="detail" id="detail-jurusan"></div>
+      <h3 class="judul-bagian">Mata Pelajaran per Jurusan</h3>
+      <div class="mapel-grid" id="grid-mapel"></div>
+    </section>
+
+    <section class="halaman" id="guru">
+      <div class="banner">&#128105;&#8205;&#127979;</div>
+      <small class="label-kecil">TENAGA PENDIDIK</small>
+      <h2>Guru Jurusan</h2>
+      <p class="penjelasan">Guru pembimbing pada setiap kompetensi keahlian. Klik kartu untuk bertanya.</p>
+      <div class="guru-grid" id="grid-guru"></div>
+    </section>
+
+    <section class="halaman" id="kurikulum">
+      <div class="banner">&#128218;</div>
+      <h2>Kurikulum Jurusan RPL</h2>
+      <p class="penjelasan">
+        Mata pelajaran inti jurusan RPL yang dipelajari dari kelas X sampai XII.
+      </p>
+      <ul class="daftar">
+        <li><b>Pemrograman Web:</b> membuat website dengan HTML, CSS, dan JavaScript.</li>
+        <li><b>Basis Data:</b> merancang dan mengelola data dengan SQL.</li>
+        <li><b>Pemrograman Berorientasi Objek:</b> menyusun program dengan konsep class dan objek.</li>
+        <li><b>PKL:</b> praktik kerja langsung di dunia usaha dan industri.</li>
+      </ul>
+    </section>
+
+    <section class="halaman" id="karya">
+      <div class="banner">&#128187;</div>
+      <h2>Berita &amp; Proyek Terbaru Kelas XII RPL</h2>
+      <p class="penjelasan">
+        Beberapa proyek yang dikerjakan siswa kelas XII RPL. Klik kartu untuk bertanya.
+      </p>
+      <div class="card-grid">
+        <article class="card" data-tanya="Jelaskan aplikasi inventaris QR">
+          <div class="thumb">&#128247;</div>
+          <h4>Aplikasi Inventaris QR</h4>
+          <p>Sistem peminjaman alat laboratorium berbasis web responsif dengan pemindai QR Code.</p>
+        </article>
+        <article class="card" data-tanya="Jelaskan portal CBT online">
+          <div class="thumb">&#128221;</div>
+          <h4>Portal CBT Online</h4>
+          <p>Platform ujian berbasis komputer yang adaptif pada desktop lab maupun smartphone.</p>
+        </article>
+        <article class="card" data-tanya="Jelaskan e-katalog produk PKK">
+          <div class="thumb">&#128717;</div>
+          <h4>E-Katalog Produk PKK</h4>
+          <p>Etalase digital karya kreatif siswa jurusan Rekayasa Perangkat Lunak.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="halaman" id="kontak">
+      <div class="banner">&#128205;</div>
+      <h2>Kontak</h2>
+      <p class="penjelasan">
+        Hubungi jurusan RPL untuk informasi pendaftaran, kerja sama PKL, dan kegiatan lainnya.
+      </p>
+      <ul class="info-kontak">
+        <li>
+          <span>&#127979;</span>
+          <div><b>Sekolah</b><br>SMK Negeri 9 Medan</div>
+        </li>
+        <li>
+          <span>&#128205;</span>
+          <div><b>Alamat</b><br>Jl. Patriot No.20 A, Lalang, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20123</div>
+        </li>
+        <li>
+          <span>&#9993;&#65039;</span>
+          <div><b>Email</b><br><a href="mailto:smkn09medan@gmail.com">smkn09medan@gmail.com</a></div>
+        </li>
+      </ul>
+      <a class="tombol" target="_blank" rel="noopener"
+         href="https://www.google.com/maps/search/?api=1&query=SMK+Negeri+9+Medan">Buka di Google Maps</a>
+    </section>
+
+    <section class="halaman" id="jadwal">
+      <div class="banner">&#128197;</div>
+      <h2>Jadwal Praktikum</h2>
+      <p class="penjelasan">
+        Jadwal penggunaan laboratorium (contoh, silakan sesuaikan).
+      </p>
+      <div class="tabel-wrap">
+        <table class="tabel">
+          <thead>
+            <tr><th>Hari</th><th>Mata Pelajaran</th><th>Lab</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Senin</td><td>Pemrograman Web</td><td>Lab 1</td></tr>
+            <tr><td>Rabu</td><td>Basis Data</td><td>Lab 2</td></tr>
+            <tr><td>Jumat</td><td>Pemrograman Berorientasi Objek</td><td>Lab 1</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="halaman" id="modul">
+      <div class="banner">&#128187;</div>
+      <h2>Modul Pemrograman Web</h2>
+      <p class="penjelasan">
+        Materi yang dipelajari pada modul pemrograman web tingkat lanjut.
+      </p>
+      <ul class="daftar">
+        <li><b>HTML5:</b> struktur halaman yang semantik.</li>
+        <li><b>CSS3:</b> tampilan dengan Flexbox dan Grid.</li>
+        <li><b>Media Query:</b> layout responsif untuk desktop, tablet, dan HP.</li>
+        <li><b>JavaScript:</b> membuat halaman lebih interaktif.</li>
+      </ul>
+    </section>
+
+    <section class="halaman" id="lab">
+      <div class="banner">&#128421;</div>
+      <h2>Daftar Lab RPL</h2>
+      <p class="penjelasan">
+        Ruang praktik yang digunakan siswa RPL. Klik kartu untuk bertanya.
+      </p>
+      <div class="fitur">
+        <div class="fitur-item" data-tanya="Jelaskan Lab RPL 1">
+          <span>&#128421;</span>
+          <h4>Lab RPL 1</h4>
+          <p>Pemrograman dan pengembangan web.</p>
+        </div>
+        <div class="fitur-item" data-tanya="Jelaskan Lab RPL 2">
+          <span>&#128268;</span>
+          <h4>Lab RPL 2</h4>
+          <p>Basis data dan jaringan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="halaman" id="pkl">
+      <div class="banner">&#127942;</div>
+      <h2>Info PKL &amp; LSP</h2>
+      <p class="penjelasan">
+        PKL melatih siswa bekerja di dunia industri, sedangkan LSP adalah
+        uji kompetensi untuk mendapatkan sertifikat keahlian.
+      </p>
+      <ul class="daftar">
+        <li>Siapkan portofolio web responsif sebelum PKL.</li>
+        <li>Pantau jadwal asesmen uji kompetensi LSP.</li>
+      </ul>
+    </section>
+
+</main>
+
+<div class="garis-finish"></div>
+<footer class="footer">
+  <div class="wrap fgrid">
+    <div>
+      <b>SMK Negeri 9 Medan</b>
+      <p>Jl. Patriot No.20 A, Lalang, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20123</p>
+      <p><a href="mailto:smkn09medan@gmail.com">smkn09medan@gmail.com</a></p>
+    </div>
+    <div>
+      <b>Jurusan</b>
+      <p>RPL &bull; TKJ &bull; DKV<br>PSPT &bull; Animasi &bull; Social Care</p>
+    </div>
+    <div>
+      <b>Butuh bantuan?</b>
+      <p>Klik tombol chat di pojok kanan bawah untuk bertanya pada asisten.</p>
+    </div>
+  </div>
+  <p class="footer-kecil">&copy; 2026 SMK Negeri 9 Medan</p>
+</footer>
+
+<button type="button" class="ke-atas" id="ke-atas" aria-label="Kembali ke atas">&#8593;</button>
+
+<!-- ===== CHATBOT ===== -->
+<button class="chat-fab" id="chat-fab" aria-label="Buka chat asisten">
+  &#128172;<span class="chat-badge" id="chat-badge">1</span>
+</button>
+
+<section class="chat-box" id="chat-box" aria-live="polite">
+  <div class="chat-head">
+    <div class="chat-avatar">&#129302;</div>
+    <div class="chat-title">
+      <b>Asisten SMKN 9</b>
+      <small id="chat-konteks">Online</small>
+    </div>
+    <button class="chat-close" id="chat-clear" aria-label="Hapus chat" title="Hapus chat" style="font-size:1rem">&#128465;</button>
+    <button class="chat-close" id="chat-close" aria-label="Tutup chat">&#10005;</button>
+  </div>
+  <div class="chat-body" id="chat-body"></div>
+  <div class="chat-chips" id="chat-chips"></div>
+  <form class="chat-form" id="chat-form">
+    <input type="text" id="chat-input" placeholder="Tulis pertanyaanmu..." autocomplete="off">
+    <button type="submit" aria-label="Kirim">&#10148;</button>
+  </form>
+</section>
+
+</body>
+</html>
